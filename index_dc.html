@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>订餐</title>
+    <link href="css/commonH5.css" rel="stylesheet" type="text/css" />
+    <link href="css/qkyui2.1.css" rel="stylesheet" type="text/css" />
+    <link href="css/qkyuih5_theme.css" rel="stylesheet" type="text/css" />
+    <link href="css/swiper-3.3.1.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/yddc.css" rel="stylesheet" type="text/css" />
+    <link href="css/qkySelect.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="qkybody">
+    <!--头部标准，一般固定-->
+    <div class="qkyh5_header noshadow ub ub-ac ba_fa heard_">
+        <a class="home_but" href="index.html"><i class="qkyicon">&#xe6ea;</i></a>
+        <div class="fz_16 ub-f1 t_c">当前孩子：关小子</div>
+        <a class="qkybut hbg but_ye2 mr10 brra_4 surechoose">确定订餐</a>
+    </div>
+
+    <!--中部标准，一般放列表-->
+    <div class="qkyh5_main pt50">
+        <div class="dc-know-info trn">
+            <div class="dc-know-tips bshw3">订餐须知
+                <i class="qkyicon ib trn">&#xe724;</i>
+            </div>
+            <span>1、当日18:00前预订次日及以后日期的套餐；</span>
+            <span>2、当日18:00前可以修改或取消次日的订餐，超过18:00，不能修改或取消次日的订餐；</span>
+            <span>3、餐费将每周一次进行结算收取；</span>
+        </div>
+        <div class="dc-isdc-info"></div>
+        <div class="dc-tcweek ub ub-ac">
+            <div class="tcweek-date ub-f1 brra_4"><span><b>此</b>周供应</span><label></label></div>
+        </div>
+        <div class="dc-tcbox"></div>
+
+        <div class="w96 mt10"><a class="qkybut hbg but_ye2 brra_4 iskuai surechoose ">确定订餐</a></div>
+        <div class="dc-unsend one">
+            <label>此周餐单未发布！</label>
+            <span>本周餐单会在上周的周六、周日进行发布</span>
+            <span>若本周一还没发布餐单，请及时联系相关人员</span>
+        </div>
+    </div>
+
+    <div class="qkyh5_footbg">
+        <div class="qkyh5_barnav ub ub-ac">
+                <a class="ub-f1 " href="index_jl.html"><i class="qkyicon mr4 fz_20"></i>订餐记录</a>
+                <a class="min cur" href="index.html"><i class="qkyicon mr4 fz_20"></i>订餐</a>
+                <a class="ub-f1" href="index_jy.html"><i class="qkyicon mr4 fz_20"></i>交易记录</a>
+        </div>
+    </div>
+<div class="popup-mask"></div>
+<div class="popup trn">
+    <div class="popup-page">  
+        <div class="popup-page-title">提示</div>
+        <div class="popup-page-main">
+            <div class="dc-motitle">关瑞荣 同学</div>
+            <div class="dc-motable">
+                <label>你的订餐如下：</label>
+                <table class="popup-page-table">
+                <thead><tr><th>星期/日期</th><th>午餐</th><th>晚餐</th></tr></thead>
+                <tbody class="dc-motc"></tbody>
+                </table>
+            </div>
+            <div class="dc-motips">请再次确认订餐人的信息及餐单！</div>
+
+            <div class="ub ub-ac">
+                <a  class="qkybut hbg but_ye2 mr10  brra_4 ub-f1 iskuai dcokeey">确定订餐</a>
+                <a  class="qkybut hbg but_ye2  ml10 brra_4 ub-f1 iskuai popup-close">返回修改</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/sea.js"></script>
+    <script src="js/seaconfig2.0.js"></script>
+    <script>
+        seajs.use(["jq", "run"], function (j, r) {
+            r.dc();
+        });
+    </script>
+</body>
+
+</html>

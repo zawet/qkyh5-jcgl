@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>订餐</title>
+    <link href="css/commonH5.css" rel="stylesheet" type="text/css" />
+    <link href="css/qkyui2.1.css" rel="stylesheet" type="text/css" />
+    <link href="css/qkyuih5_theme.css" rel="stylesheet" type="text/css" />
+    <link href="css/swiper-3.3.1.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/yddc.css" rel="stylesheet" type="text/css" />
+    <link href="css/qkySelect.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="qkybody">
+   
+
+    <!--中部标准，一般放列表-->
+    <div class="qkyh5_main">
+        <div class="jy-sxbut">筛选</div>
+        <div class="dc-isdc-info co_red mt0">账单于每周日15点生成并发送缴费通知</div>
+        <div class="jy-list ub ub-ac">
+            <div class="jy-lione">关小女</div>
+            <div class="jy-txtbox ub-f1">
+                <div class="jy-txt">餐费时间：2017/12/04-2017/12/10</div>
+                <div class="jy-txt ub ub-ac">
+                    <span class="iskuai ub-f1">订餐10次  共60元</span>
+                    <span class="iskuai t_r co_red">未交</span>
+                </div>
+            </div>
+            <a class="jy-cao">缴费</a>
+        </div>
+        <div class="jy-list ub ub-ac">
+                <div class="jy-lione">关小女</div>
+                <div class="jy-txtbox ub-f1">
+                    <div class="jy-txt">餐费时间：2017/12/04-2017/12/10</div>
+                    <div class="jy-txt ub ub-ac">
+                        <span class="iskuai ub-f1">订餐10次  共60元</span>
+                        <span class="iskuai t_r co_red">未交</span>
+                    </div>
+                </div>
+                <a class="jy-cao ba_ye2 cj">催缴</a>
+            </div>
+        <div class="jy-list ub ub-ac">
+                <div class="jy-lione">关小子</div>
+                <div class="jy-txtbox ub-f1">
+                    <div class="jy-txt">餐费时间：2017/12/04-2017/12/10</div>
+                    <div class="jy-txt ub ub-ac">
+                        <span class="iskuai ub-f1">订餐10次  共60元</span>
+                        <span class="iskuai  ub-f1">线上缴费</span>
+                        <span class="iskuai t_r co_gr">已交</span>
+                    </div>
+                </div>
+        </div>
+        <div class="jy-list ub ub-ac">
+                    <div class="jy-lione">关小子</div>
+                    <div class="jy-txtbox ub-f1">
+                        <div class="jy-txt">餐费时间：2017/12/04-2017/12/10</div>
+                        <div class="jy-txt ub ub-ac">
+                            <span class="iskuai ub-f1">订餐10次  共60元</span>
+                            <span class="iskuai  ub-f1">线上缴费</span>
+                            <span class="iskuai t_r co_gr">已交</span>
+                        </div>
+                    </div>
+        </div>
+
+        <div class="w96"><a class="qkybut hbg but_ye2 brra_4 iskuai allcj">全部催缴</a></div>
+
+        
+    </div>
+
+    <div class="qkyh5_footbg">
+        <div class="qkyh5_barnav ub ub-ac">
+            <a class="ub-f1 " href="index_jl.html"><i class="qkyicon mr4 fz_20"></i>订餐记录</a>
+            <a class="min " href="index.html"><i class="qkyicon mr4 fz_20"></i>订餐</a>
+            <a class="ub-f1 cur" href="index_jy.html"><i class="qkyicon mr4 fz_20"></i>交易记录</a>
+        </div>
+    </div>
+
+<div class="popup-mask"></div>
+<div class="popup trn left" id="shaixuan">
+    <div class="popup-page">  
+        <div class="popup-page-title">筛选</div>
+        <div class="popup-page-main">
+            <div class="radio-box-choose clear3">
+                <label>学生</label>
+                <a class="active">关小女</a><a>关小子</a>
+            </div>
+            <div class="radio-box-choose clear3">
+                <label>缴费状态</label>
+                <a class="active">已交</a><a>未交</a>
+            </div>
+            <div class="radio-box-choose clear3">
+                <label>缴费方式</label>
+                <a class="active">线上</a><a>手工</a>
+            </div>
+            <div class="radio-box-choose clear3">
+                    <label>缴费时间</label>
+                    <a class="active">2017/12/04-2017/12/10</a>     
+                    <a>2017/12/11-2017/12/17</a>
+                    <a>2017/12/18-2017/12/24</a>
+                    <a>2017/12/25-2017/12/31</a>     
+            </div>
+            <div class="radio-box-choose clear3">
+                <label>年级</label>
+                <a class="active">初一</a><a>初二</a><a>初三</a><a>高一</a><a>高二</a><a>高三</a>
+            </div>
+            <div class="radio-box-choose clear3">
+                <label>班级</label>
+                <a class="active">（1）班</a><a>（2）班</a><a>（3）班</a><a>（4）班</a><a>（5）班</a>
+            </div>
+            <div class="radio-box-choose clear3">
+                    <label>姓名</label>
+                    <input type="text">
+                </div>
+        </div>
+        <div class="popup-page-buts ub ub-ac">
+            <a  class="ub-f1 ">重置</a>
+            <a  class="ub-f1  popup-close">确定</a>
+        </div>
+    </div>
+</div>
+
+<div class="popup trn" id="tips1">
+        <div class="popup-page">  
+            <div class="popup-page-title">提示</div>
+            <div class="popup-page-main">
+                <div class="co_red pb10 t_c">是否对关小女 2017/12/11-2017/12/17 的餐费<br/>发送催缴通知？</div>
+                
+                <div class="ub ub-ac">
+                    <a  class="qkybut hbg but_ye2 mr10  brra_4 ub-f1 iskuai">确定</a>
+                    <a  class="qkybut hbg but_ye2  ml10 brra_4 ub-f1 iskuai popup-close">取消</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="popup trn" id="tips2">
+            <div class="popup-page">  
+                <div class="popup-page-title">提示</div>
+                <div class="popup-page-main">
+                    <div class="co_red pb10 t_c">共查出要催缴账单记录XX条<br/>是否发送催缴通知？</div>
+                    
+                    <div class="ub ub-ac">
+                        <a  class="qkybut hbg but_ye2 mr10  brra_4 ub-f1 iskuai">确定</a>
+                        <a  class="qkybut hbg but_ye2  ml10 brra_4 ub-f1 iskuai popup-close">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="js/sea.js"></script>
+    <script src="js/seaconfig2.0.js"></script>
+    <script>
+        seajs.use(["jq", "run"], function (j, r) {
+            r.jy();
+        });
+    </script>
+</body>
+
+</html>
