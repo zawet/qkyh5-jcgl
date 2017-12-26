@@ -393,6 +393,7 @@ textarea,input{ outline:none;}
 .lcmore{ width:18px; display:none;}
 .qkyh5_main{ padding:0 0 60px; position:relative; z-index: 6;}
 .qkyh5_main.pt50{ padding-top: 50px;}
+.qkyh5_main.pt90{ padding-top: 90px;}
 .qkyh5_footbg{ position:fixed; bottom:0;left:0; width:100%;  z-index:9997; height:52px;}
 .footer {position: fixed;bottom:4px;left:2%;width:96%; border-radius:4px;z-index:9997;}
 .footer li {height:36px; line-height:36px;}

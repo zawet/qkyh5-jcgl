@@ -1,10 +1,22 @@
 // JavaScript Document
 define({ //dedine闭包
-	childinfo: {//学期下拉数据
+	childinfo: {
 		values: [
 			["关小女","关小子","关大小"]
 		],
 		valuesActive: [1] //默认选择第几个
+    },
+    year: {
+		values: [
+			["2016","2017","2018"]
+		],
+		valuesActive: [1] //默认选择第几个
+    },
+    moon: {
+		values: [
+			["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"]
+		],
+		valuesActive: [11] //默认选择第几个
 	},
 	tcdata:{
 		"2017-12-8":{

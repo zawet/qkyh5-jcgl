@@ -73,16 +73,25 @@ define(function(require,exports) {//dedine闭包
 	}
 
 	exports.jl=function(){
-		$(".qkyh5_header_main").qkySelect({
+		$("#man").qkySelect({
 			values:Data.childinfo.values,
 			valuesActive:Data.childinfo.valuesActive,
+		});
+		$("#year").qkySelect({
+			values:Data.year.values,
+			valuesActive:Data.year.valuesActive
+		});
+		$("#moon").qkySelect({
+			values:Data.moon.values,
+			valuesActive:Data.moon.valuesActive
 		});
 	}
 
 	exports.jy=function(){
 		$(".jy-sxbut").click(function(){
-			$("#shaixuan").addClass("open");
-			$(".popup-mask").fadeIn(200);
+			$(this).toggleClass("open")
+			$("#shaixuan").toggleClass("open");
+			$(".popup-mask").fadeToggle(200);
 		});
 		$(".cj").click(function(){
 			$("#tips1").addClass("open");
@@ -95,6 +104,7 @@ define(function(require,exports) {//dedine闭包
 		$(".popup-close").click(function(){
 			$(this).parents(".popup").removeClass("open");
 			$(".popup-mask").fadeOut(200);
+			$(".jy-sxbut").removeClass("open");
 		});
 		$("body").on("click",".radio-box-choose a",function(){
 			$(this).addClass("active").siblings().removeClass("active");
