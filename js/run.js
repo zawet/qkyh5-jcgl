@@ -26,10 +26,10 @@ define(function(require,exports) {//dedine闭包
 	
 	exports.index=function(){
 		//头部下拉
-		$(".qkyh5_header_main").qkySelect({
-			values:Data.childinfo.values,
+		 $(".qkyh5_header_main").qkySelect({
+		 	values:Data.childinfo.values,
 			valuesActive:Data.childinfo.valuesActive,
-		});
+		 });
 		
 		//列表渲染
 		dc.dcdist(toy,tom+1,tod);

@@ -384,7 +384,7 @@ textarea,input{ outline:none;}
 .qkyh5_header{position: fixed;top: 0;left: 0;z-index:9999;width: 100%;}
 
 .qkyh5_barnav{ width:100%; position: relative;}
-.qkyh5_barnav a{ display:block; padding:14px 0 12px; text-align:center; font-size:16px;} 
+.qkyh5_barnav a{ display:block; padding:14px 0 12px; text-align:center; font-size:16px; z-index: 55;} 
 
 .qkyh5_search{ padding:10px 4%;}
 .qkyh5_search .search_btn{ width:30px; text-align:center; position:absolute; left:0; height:32px; line-height:30px;}

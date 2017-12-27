@@ -53,8 +53,9 @@ define(function(require,exports) {//dedine闭包
 	}
 
 	 exports.listbox=function(){
-		$("body").on("click",".dc-listbox .dc-week-date",function(){
-			$(this).find("i").toggleClass("r90").parent().parent().siblings().find(".dc-week-date i").addClass("r90");
+		$(".dc-tcbox").on("click",".dc-week-date",function(){
+			$(this).find("i").toggleClass("r90")
+			$(this).parent().siblings().find(".dc-week-date i").addClass("r90");
 			$(this).parent().find(".dc-main").slideToggle(200).parent().siblings().find(".dc-main").slideUp(200);
 		})
 	}

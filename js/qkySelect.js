@@ -23,7 +23,7 @@ define(function(require,exports) {//dedine闭包
 				'<label class="qsv-label ub-f1"></label>'+
 				'<i class="qsv-i qkyicon">&#xe66f;</i>'+
 			'</div>'+
-			'<div class="qky-select-mask"></div>'+
+			//'<div class="qky-select-mask"></div>'+
 			'<div class="qky-select-optionbox">'+
 				'<div class="qso-center"></div>'+
 				'<div class="qso-swbox qsClear"></div>'+
@@ -89,19 +89,19 @@ define(function(require,exports) {//dedine闭包
 	function qsInteract(op){
 		op.vBox.click(function(){
 			$(this).parent().find(opt.oBox).toggleClass("open");
-			$(op.blurId).toggleClass("blur");
+			//$(op.blurId).toggleClass("blur");
 			op.maskBox.show();
 		});
 				
 		/***以外区域点击 s**/
 		$(document).not($(opt.vBox)).click(function(){
 			op.oBox.removeClass("open");
-			$(op.blurId).removeClass("blur");
+			//$(op.blurId).removeClass("blur");
 			op.maskBox.hide();
 		});
 		$(document).not($(opt.oBox)).click(function(){
 			op.oBox.removeClass("open");
-			$(op.blurId).removeClass("blur");
+			//$(op.blurId).removeClass("blur");
 			op.maskBox.hide();
 		});
 		/*防止事件冒泡*/
@@ -114,7 +114,7 @@ define(function(require,exports) {//dedine闭包
 		
 		$(".qso-but").click(function(){
 			op.oBox.removeClass("open");
-			$(op.blurId).removeClass("blur");
+			//$(op.blurId).removeClass("blur");
 			op.maskBox.hide();
 			if(!$(this).hasClass("close"))
 			op.changefun(op.swBox.find(".swiper-container .swiper-slide-active a").html());
