@@ -88,18 +88,19 @@ define(function(require,exports) {//dedine闭包
 	
 	function qsInteract(op){
 		op.vBox.click(function(){
-			$(this).parent().find(opt.oBox).toggleClass("open");
+			$(this).parent().find(op.oBox).toggleClass("open");
 			//$(op.blurId).toggleClass("blur");
 			op.maskBox.show();
 		});
 				
 		/***以外区域点击 s**/
-		$(document).not($(opt.vBox)).click(function(){
+		//console.log(op.vBox,op.oBox);
+		$(document).not(op.vBox).click(function(){
 			op.oBox.removeClass("open");
 			//$(op.blurId).removeClass("blur");
 			op.maskBox.hide();
 		});
-		$(document).not($(opt.oBox)).click(function(){
+		$(document).not(op.oBox).click(function(){
 			op.oBox.removeClass("open");
 			//$(op.blurId).removeClass("blur");
 			op.maskBox.hide();
@@ -112,7 +113,7 @@ define(function(require,exports) {//dedine闭包
 			event.stopPropagation();
 		});
 		
-		$(".qso-but").click(function(){
+		op.oBox.find(".qso-but").click(function(){
 			op.oBox.removeClass("open");
 			//$(op.blurId).removeClass("blur");
 			op.maskBox.hide();

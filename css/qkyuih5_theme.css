@@ -52,7 +52,7 @@
 .qkyh5_header .qkyh5_barnav{ background:#fff;}
 .qkyh5_footbg .qkyh5_barnav{border-top:1px solid #e6e6e6; background:#fafafa;}
 .qkyh5_barnav a{color:#666; border-bottom:2px solid #fafafa;} 
-.qkyh5_barnav a.cur{ border-color:#ff7200; color:#fff; background: #ff7200;}
+.qkyh5_barnav a.cur{ border-color:#ff7200; color:#ff7200; background: #fafafa;}
 .qkyh5_search{background: #f1f0f6;}
 .lcmore{color:#666;}
 .lcmore.on{ color:#2eb8eb;}

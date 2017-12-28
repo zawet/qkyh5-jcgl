@@ -103,7 +103,7 @@ define(function(require,exports) {//dedine闭包
             '</div>';
         }
 		id.html(dayHtml);
-		$(".dc-listbox.today").addClass("new");
+		//$(".dc-listbox.today").addClass("new");
     }
 
 

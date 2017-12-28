@@ -1,6 +1,7 @@
 define(function(require,exports) {//dedine闭包
 	var Data=require("./Data.js");//数据总成
 	var qkyselect=require("./qkySelect.js");//下拉选择总成
+	var zs=require("./zwtSelect.js");//下拉选择总成
 	var fun=require("./qkyFunH5.js");//函数总成
 	var dc=require("./dc.js");//日历总成
 	var weekname = new Array("周日","周一","周二","周三","周四","周五","周六");  
@@ -26,9 +27,8 @@ define(function(require,exports) {//dedine闭包
 	
 	exports.index=function(){
 		//头部下拉
-		 $(".qkyh5_header_main").qkySelect({
-		 	values:Data.childinfo.values,
-			valuesActive:Data.childinfo.valuesActive,
+		 zs.selectDraw($("#childChoose select"),Data.childinfo2,function(val,uid){
+			 //这里放下拉改变选项后的执行事件
 		 });
 		
 		//列表渲染
@@ -73,17 +73,14 @@ define(function(require,exports) {//dedine闭包
 	}
 
 	exports.jl=function(){
-		$("#man").qkySelect({
-			values:Data.childinfo.values,
-			valuesActive:Data.childinfo.valuesActive,
+		zs.selectDraw($("#man select"),Data.childinfo2,function(val,uid){
+			//这里放下拉改变选项后的执行事件
 		});
-		$("#year").qkySelect({
-			values:Data.year.values,
-			valuesActive:Data.year.valuesActive
+		zs.selectDraw($("#year select"),Data.year2,function(val,uid){
+			//这里放下拉改变选项后的执行事件
 		});
-		$("#moon").qkySelect({
-			values:Data.moon.values,
-			valuesActive:Data.moon.valuesActive
+		zs.selectDraw($("#moon select"),Data.moon2,function(val,uid){
+			//这里放下拉改变选项后的执行事件
 		});
 	}
 

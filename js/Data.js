@@ -6,6 +6,15 @@ define({ //dedine闭包
 		],
 		valuesActive: [1] //默认选择第几个
     },
+    childinfo2:[
+        ["0","关小子"],["1","关小女"],["2","关大子"]
+    ],
+    year2:[
+        ["0","2016"],["1","2017"],["2","2018"]
+    ],
+    moon2:[
+        ["0","1月"],["1","2月"],["2","3月"],["3","4月"],["4","5月"],["5","6月"],["6","7月"],["7","8月"],["8","9月"],["9","10月"],["10","11月"],["11","12月"],
+    ],
     year: {
 		values: [
 			["2016","2017","2018"]
@@ -72,7 +81,7 @@ define({ //dedine闭包
                 {tcname:"糖醋鲤鱼",tcimg:"jc06.png",tcprice:6,isActive:false}
             ]
 		},
-		"2017-12-19":{
+		"2017-12-28":{
             lunch:[
                 {tcname:"糖醋鲤鱼",tcimg:"jc04.png",tcprice:6,isActive:true},
                 {tcname:"糖醋鲤鱼",tcimg:"jc07.png",tcprice:6,isActive:false},
@@ -84,7 +93,7 @@ define({ //dedine闭包
                 {tcname:"糖醋鲤鱼",tcimg:"jc06.png",tcprice:6,isActive:false}
             ]
         },
-        "2017-12-20":{
+        "2017-12-27":{
             lunch:[
                 {tcname:"糖醋鲤鱼",tcimg:"jc04.png",tcprice:6,isActive:false},
                 {tcname:"糖醋鲤鱼",tcimg:"jc05.png",tcprice:6,isActive:true},
